@@ -1,0 +1,31 @@
+print("Enter 'S' for small pizza, 'M' for medium pizza and 'L' for large pizza")
+x=input("enter what size of pizza you want : ")
+if x == 'S':
+    p = 100
+    print("100")
+elif x == 'M':
+    p = 200
+    print("200")
+elif x == 'L':
+    p = 300
+    print("300")
+
+extra=input("do you want pepporoni on your pizza (Y/N) : ")
+if extra == 'Y':
+
+ if p == 100:
+    print("it will cost yor extra 30 rupee")
+    r = p+30
+ elif p == 200 or p == 300:
+    print("it will cost yor extra 50 rupee")
+    r = p+50
+else:
+    print("OK")
+    r = p
+
+c=input("do you want extra cheese (Y/N) : ")
+if c == 'Y':
+    b = r+20
+    print(f"please pay {b} ruppes")
+else:
+    print(f"pay {r} rupees")
